@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            margin: 20px;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: rgb(48, 46, 46);
+        }
+        .logincontainer{
+            height: 400px;
+            width: 450px;
+            background-color: rgb(214, 209, 202);
+            border: 1px solid ;
+            border-radius: 8px;
+            box-shadow: 0 0 25px whitesmoke;
+            padding: 13px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type = text],input[type = password]{
+            height: 30px;
+            width: 300px;
+            margin-left: 10px;
+            font-size: large;
+        }
+        label{
+            font-size: large;
+            font-weight: bold;
+        }
+        span{
+            margin: 10px;
+        }
+        input[type = submit]{
+            height: 30px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: skyblue;
+            font-size: large;
+        }
+        input[type = submit]:hover{
+            box-shadow: 0 0 23px ;
+            cursor: pointer;
+        }
+        .registerbutton{
+            height: 30px;
+            width: 100px;
+            border-radius: 8px;
+            background-color: rgb(233, 68, 68);
+            font-size: large;
+        }
+        .registerbutton:hover{
+            box-shadow: 0 0 23px;
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+        }
+        .buttoncontainer{
+            display: flex;
+            justify-content: space-between;
+            width: 87%;
+            margin: 5% 0;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="logincontainer">
+            <h1 style="color: blue; text-decoration: underline;  margin-bottom: 50px;">Login page</h1>
+            <span >
+            <label for="username">Username:</label>
+            <input type="text" id="username" autocomplete="off">
+            </span>
+            <span>
+               <label for="Password">Password:</label>
+               <input type="password" id="password">
+            </span>
+            <div class="buttoncontainer">
+                <input type="submit">
+                <button class="registerbutton"><a href="Register.html" >Register</a></button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
