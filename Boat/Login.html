@@ -71,16 +71,18 @@
         }
         .buttoncontainer{
             display: flex;
-            justify-content: space-between;
-            width: 87%;
+            justify-content: center;
+            width: 100%;
             margin: 5% 0;
-
         }
-        
+        .submit{
+            margin-left: 15px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <form action="">
+    <form action="index.html">
         <div class="logincontainer">
             <h1 style="color: blue; text-decoration: underline;  margin-bottom: 50px;">Login page</h1>
             <span >
@@ -92,8 +94,7 @@
                <input type="password" id="password">
             </span>
             <div class="buttoncontainer">
-                <input type="submit">
-                <button class="registerbutton"><a href="Register.html" >Register</a></button>
+                <input type="submit" class="submit">
             </div>
         </div>
     </form>
