@@ -41,7 +41,12 @@ ul,#logo{
     z-index: 1;
     box-shadow: 0 0 10px;
 }
-
+.corouselimage{
+    width: 98%; 
+    height: 680px; 
+    margin-left: 17px;
+    margin-top: 10px;
+}
 ul{
     display: flex;
     list-style: none;
@@ -62,8 +67,22 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.nameheader{
+    margin: 0px 42px; 
+    margin-bottom: -17px; 
+    padding-top: 9px; 
+    padding-bottom: -5px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 a:hover{
     color: brown;
+    font-size: large;
+    font-weight: bold;
+}
+a:hover svg{
+    fill: brown;
     font-size: large;
     font-weight: bold;
 }
@@ -79,6 +98,7 @@ h3{
     border: 0.5px solid black;
     border-radius: 7px;
 }
+
 .maincontainer{
     margin-left: 0px;
     display: grid;
@@ -119,11 +139,28 @@ h3{
     background-color: rgb(247, 220, 68);
     height: 20px;
     width: 151.5px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 11px;
 }
+
+#pricecontainer #name{
+    margin-bottom: 9px;
+}
+
+#pricecontainer #price{
+    padding-bottom: 5px;
+    margin-left: 25px;
+}
+
+#pricecontainer button{
+    margin-top: 4px;
+    cursor: pointer; 
+    border: 1px solid black;
+}
+
 button {
     background-color: rgba(23, 22, 22, 0.886);
     color: whitesmoke;
@@ -208,6 +245,19 @@ span{
 .shopcontainer p:hover{
     color: orangered;
 }
+.helpcontainer{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.helpcontainer p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-wrap: nowrap;
+}
+.helpcontainer p:hover{
+    color: orangered;
+}
 .companycontainer{
     margin-top: 30px;
     margin-left: 60px;
@@ -261,4 +311,133 @@ ion-icon{
     transition: 0.5s;
     background-color: rgb(32, 32, 160);
     color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width : 360px) {
+    .nameheader{
+        /* width: fit-content; */
+        font-size: smaller;
+        text-wrap: wrap;
+        display: inline-block;
+    }
+    #pricecontainer #name{
+        max-width: auto; 
+        margin-bottom: 9px;
+        font-size: small;
+    }
+    #pricecontainer #price{
+        max-width: auto;
+        font-size: small;
+        padding-bottom: 5px; 
+        margin-left: 10px;
+    }
+    #pricecontainer button{
+        width: auto;
+        /* margin: 0; */
+    }
+    .footerinputborder{
+        width: auto;
+        margin: 0;
+        margin-left: -15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width : 360px) and (max-width : 400px) {
+    .nameheader{
+        /* width: fit-content; */
+        font-size: smaller;
+        text-wrap: wrap;
+        display: inline-block;
+    }
+    #pricecontainer #name{
+        max-width: auto; 
+        margin-bottom: 9px;
+        font-size: medium;
+    }
+    #pricecontainer #price{
+        /* align-items: center; */
+        max-width: auto;
+        font-size: medium;
+        padding-bottom: 5px; 
+        /* margin-left: 25px; */
+    }
+    #pricecontainer button{
+        width: auto;
+        /* margin: 0; */
+    }
+    .footerinputborder{
+        margin-left: -15px;
+    }
+}
+
+@media screen and  (max-width : 700px ) {
+    .links{
+        display: none;
+    }
+    .header{
+        width: 100%;
+        position: sticky;
+        top: 0%;
+    }
+    .corouselimage{
+        width: 98%;
+        height: 250px;
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+        /* margin: 10px; */
+    }
+    .nameheader{
+        margin: 0;
+        /* text-wrap: nowrap; */
+        font-size: medium;
+        font-weight: bolder;
+        margin: 10px;
+        margin-left: 5px;
+        
+    }
+    .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14,.item15,.item16,.item17,.item18,.item19,.item20,.item21{
+        margin: 4px;
+        width: 98%;
+        border: 1px solid gray;
+    }
+    .imagefooter{
+        width: 151.8px;
+    }
+    #img1{
+        border: 1px solid gray;
+    }
+    .footer{
+        margin: 10px 0;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .footerinputborder{
+        margin-left: -15px;
+    }
+    .footerimage{
+        padding-left: 0;
+    }
+    .companycontainer{
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .contactcontainer{
+        margin-top: 0px;
+    }
+    .helpcontainer{
+        margin-top: 0;
+    }
+    .shopcontainer{
+        margin-top: 0;
+    }
 }
