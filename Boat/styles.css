@@ -194,6 +194,7 @@ span{
     width: 100%;
     /* margin: 10px; */
     background-color: rgb(217, 228, 236);
+    padding-bottom: 10px;
 }
 
 .footer1{
@@ -373,7 +374,7 @@ ion-icon{
     }
 }
 
-@media screen and  (max-width : 700px ) {
+@media screen and  (max-width : 640px ) {
     .links{
         display: none;
     }
@@ -398,7 +399,6 @@ ion-icon{
     }
     .nameheader{
         margin: 0;
-        /* text-wrap: nowrap; */
         font-size: medium;
         font-weight: bolder;
         margin: 10px;
@@ -416,10 +416,113 @@ ion-icon{
     #img1{
         border: 1px solid gray;
     }
+    #pricecontainer{
+        margin: 0;
+        height: auto;
+    }
+    #name{
+        margin: 0;
+        display: block;
+    }
+    #price{
+        margin-top: -15px;
+        
+    }
+    button{
+        padding: 10px;
+    }
     .footer{
         margin: 10px 0;
         height: fit-content;
         flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .footerinputborder{
+        margin-left: -15px;
+    }
+    .footerimage{
+        padding-left: 0;
+    }
+    .companycontainer{
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .contactcontainer{
+        margin-top: 0px;
+    }
+    .helpcontainer{
+        margin-top: 0;
+    }
+    .shopcontainer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:850px) {
+    
+    .header{
+        width: 100%;
+        position: sticky;
+        top: 0%;
+    }
+    .corouselimage{
+        width: 98%;
+        height: 250px;
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .maincontainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: auto;
+        margin: 0;
+        gap: 0;
+    }
+    .nameheader{
+        margin: 0;
+        font-size: medium;
+        font-weight: bolder;
+        margin: 10px;
+        margin-left: 5px;
+        
+    }
+    .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14,.item15,.item16,.item17,.item18,.item19,.item20,.item21{
+        margin: 4px;
+        width: 98%;
+        border: 1px solid gray;
+    }
+    .item21{
+        display: none;
+    }
+    .imagefooter{
+        width: 151.8px;
+    }
+    #img1{
+        border: 1px solid gray;
+    }
+    #pricecontainer{
+        margin: 0;
+        height: auto;
+    }
+    #name{
+        font-size: 13px;
+        margin: 0;
+        display: block;
+    }
+    #price{
+        font-size: small;
+        margin-bottom: 10px;
+    }
+    button{
+        padding: 8px;
+        width: auto;
+    }
+    .footer{
+        margin: 10px 0;
+        height: fit-content;
+        flex-direction: column;
+        padding-bottom: 20px;
     }
     .footerinputborder{
         margin-left: -15px;
